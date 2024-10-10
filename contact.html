@@ -1,7 +1,124 @@
 <!DOCTYPE html>
 <html>
-  <head> </head>
-  <body>
-    <header></header>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="widt-device-width, initial-scale-1.0" />
+    <meta
+      name="describtion"
+      content="Get real authentic, hand-crafted guitars from Guitar Kings"
+    />
+    <title>Guitar Kings | Contact</title>
+    <link rel="stylesheet" href="css/styles.css" />
+  </head>
+  <body class="l-body">
+    <header class="l-header">
+      <section class="c-nav-bar">
+        <div class="c-logo">Guitar Kings</div>
+
+        <nav class="c-nav-bar_list">
+          <a href="index.html"> Home</a>
+          <a href="guitars.html"> Guitars</a>
+          <a href="contact.html" class="is-active"> Contact</a>
+        </nav>
+      </section>
+    </header>
+
+    <main class="l-main">
+      <section>
+        <h1>Contact</h1>
+      </section>
+      <section>
+        <p>
+          Lorem ipsum dolor sit, amet consectetur adipisicing elit. Sint
+          excepturi provident facere autem, architecto reprehenderit ex tenetur
+          similique, ipsam exercitationem, doloremque nostrum odit ea sunt cum
+          explicabo iste quasi nisi. Lorem ipsum dolor sit amet, consectetur
+          adipisicing elit. Soluta reiciendis tempora, error quae, nesciunt a
+          numquam itaque harum quibusdam, deserunt architecto illum expedita.
+          Maxime totam dicta repellendus, laborum veritatis dolorum! Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Eveniet nemo ut eligendi
+          a, placeat dignissimos illo odio cum, ipsum impedit laborum maxime!
+          Dicta doloremque fugiat cum enim deleniti quaerat aut. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Sequi fugit sit corporis
+          natus. Nobis consectetur pariatur quod, minima accusantium dolorum
+          possimus aliquid voluptas, totam atque amet soluta exercitationem
+          temporibus quidem. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Sed ullam totam magnam ad saepe eveniet sapiente quod iusto. Sed
+          hic rerum similique numquam ut debitis alias eligendi ipsam at iste.
+        </p>
+      </section>
+
+      <form class="c-forms">
+        <div class="c-input-fields">
+          <label for="name">Name</label>
+          <input type="text" id="name" name="name" placeholder="Name" />
+        </div>
+        <div>
+          <div class="c-padding">
+            <label for="color"> Color of guitar </label>
+          </div>
+          <div class="c-row-color">
+            <div>
+              <label for="color-orange">Orange</label>
+              <input
+                type="radio"
+                id="color-orange"
+                name="color"
+                value="orange"
+              />
+            </div>
+
+            <div>
+              <label for="color-blue">Blue</label>
+              <input type="radio" id="color-blue" name="color" value="blue" />
+            </div>
+
+            <div>
+              <label for="color-green">Green</label>
+              <input type="radio" id="color-green" name="color" value="green" />
+            </div>
+          </div>
+        </div>
+
+        <div class="c-input-fields">
+          <label for="email">Email</label>
+          <input type="email" id="email" name="email" />
+        </div>
+
+        <div class="c-input-fields">
+          <label for="password">Password</label>
+          <input type="password" id="password" />
+        </div>
+
+        <div class="c-input-fields">
+          <label for="passwordconfirm">Confirm password</label>
+          <input type="password" id="passwordconfirm" />
+        </div>
+
+        <div class="c-row-submit">
+          <input type="submit" value="Sign up" class="c-btn" />
+        </div>
+
+        <div>
+          <input type="checkbox" name="agree" value="agree" id="agree" />
+          <label for="terms">I agree to the terms and condition</label>
+        </div>
+        <div>
+          <label for="city-choice">Choose a city:</label>
+          <input list="city" id="city-choice" name="city-choice" />
+
+          <datalist id="city">
+            <option value="Oslo"></option>
+            <option value="Amsterdam"></option>
+            <option value="Paris"></option>
+            <option value="London"></option>
+          </datalist>
+        </div>
+      </form>
+    </main>
+
+    <footer class="l-footer">
+      <small>Copyright &copy;</small>
+    </footer>
   </body>
 </html>

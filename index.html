@@ -8,87 +8,117 @@
       content="Get real authentic, hand-crafted guitars from Guitar Kings"
     />
     <title>Guitar Kings | Home</title>
+    <link rel="stylesheet" href="css/styles.css" />
   </head>
 
   <body>
-    <header>
-      <a href="index.html"><h3>Guitar Kings</h3></a>
-      <nav>
-        <ul>
-          <li><a href="index.html"> Home</a></li>
-          <li><a href="guitars.html"> Guitars</a></li>
-          <li><a href="contact.html"> Contact</a></li>
-        </ul>
-      </nav>
+    <header class="l-header">
+      <section class="c-nav-bar">
+        <div class="c-logo">Guitar Kings</div>
+
+        <nav class="c-nav-bar_list">
+          <a href="/" class="is-active"> Home</a>
+          <a href="/guitars.html"> Guitars</a>
+          <a href="/contact.html"> Contact</a>
+        </nav>
+      </section>
     </header>
-    <main>
-      <h1>Authentic Handmade Guitars</h1>
-      <a href="guitars.html">View Guitars</a>
-      <section>
-        <div>
-          <h2>Our Guitars Are</h2>
-          <ul>
-            <li>Made with real Pennsylvanian wood</li>
-            <li>Crafted by a family-run busniess</li>
-            <li>Built to last a lifetime</li>
-            <li>Beautiful unique sound</li>
-            <li>Option for all music lovers</li>
-          </ul>
+
+    <main class="l-main">
+      <section class="c-hero u-section-gutter">
+        <div class="c-col">
+          <h1>Authentic Handmade Guitars</h1>
+          <div class="call-to-action">
+            <a href="guitars.html" class="c-button">View Guitars</a>
+          </div>
         </div>
-        <img src="/images/home-info.jpg" alt="hand strumming guitar" />
+
+        <div class="c-col c-col--last"></div>
       </section>
-      <section>
+
+      <section class="c-features u-section-gutter">
+        <div class="l-col c-content-info">
+          <div>
+            <h2>Our Guitars Are</h2>
+          </div>
+
+          <div>
+            <ul class="c-info-text">
+              <li>Made with real Pennsylvanian wood</li>
+              <li>Crafted by a family-run busniess</li>
+              <li>Built to last a lifetime</li>
+              <li>Beautiful unique sound</li>
+              <li>Option for all music lovers</li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="l-col c-img-container">
+          <img
+            src="../images/home-info.jpg"
+            alt="hand strumming guitar"
+            class="u-border-radius-md"
+          />
+        </div>
+      </section>
+
+      <section class="l-reviews u-section-gutter">
         <h2>Reviews</h2>
-        <div>
-          <p>
-            "Lorem ipsum dolor sit amet, consecture adipiscing elit. Suspendisse
-            quis dictum elit. In hac habitasse platea dictumst." - Bob Willis
-          </p>
-          <img
-            src="/images/review-bio.jpg"
-            alt="Profile picture of Bob Willis"
-          />
-        </div>
-        <div>
-          <p>
-            "Maccenas interdum, erat nec pulvinar euismod, eros crat mauris,
-            commodo vetibulum odio nunc id una. Sed volutpat consequat dolor,
-            nec sollicitudin elit eleifend vitae" - Sally Oldfield
-          </p>
-          <img
-            src="/images/review-bio2.jpg"
-            alt="Profile picture of Sally Oldfeild"
-          />
+
+        <div class="c-row">
+          <div class="c-col">
+            <p>
+              "Lorem ipsum dolor sit amet, consecture adipiscing elit.
+              Suspendisse quis dictum elit. In hac habitasse platea dictumst."
+            </p>
+            <small>Bob Willis</small>
+            <img
+              src="/images/review-bio.jpg"
+              alt="Profile picture of Bob Willis"
+              class="c-review-image-container"
+            />
+          </div>
+
+          <div class="c-col">
+            <p>
+              "Maccenas interdum, erat nec pulvinar euismod, eros crat mauris,
+              commodo vetibulum odio nunc id una. Sed volutpat consequat dolor,
+              nec sollicitudin elit eleifend vitae"
+            </p>
+            <small>Sally Oldfield</small>
+            <img
+              src="/images/review-bio2.jpg"
+              alt="Profile picture of Sally Oldfeild"
+              class="c-review-image-container"
+            />
+          </div>
         </div>
       </section>
-      <section>
+
+      <section class="l-gallery u-section-gutter">
         <h2>View Our Guitars</h2>
-        <div>
-          <img src="images/product.jpg" alt="Adironrack Red" />
-          <h3>Adirondack Red</h3>
-          <p>$500</p>
-          <a href="">View</a>
-        </div>
-        <div>
-          <img src="images/product.jpg" alt="Adironrack Red" />
-          <h3>Adirondack Red</h3>
-          <p>$500</p>
-          <a href="">On Sale</a>
-        </div>
-        <div>
-          <img src="images/product.jpg" alt="Adironrack Red" />
-          <h3>Adirondack Red</h3>
-          <p>$500</p>
-          <a href="">View</a>
-        </div>
-        <div>
-          <img src="images/product.jpg" alt="Adironrack Red" />
-          <h3>Adirondack Red</h3>
-          <p>$500</p>
-          <a href="">View</a>
+
+        <div class="c-guitar-blocks-list">
+          <div class="c-guitar-block-item">
+            <div class="c-gblock-img-conatiner">
+              <img src="/images/product.jpg" alt="Adironrack Red on pillow" />
+            </div>
+            <div class="c-guitar-row">
+              <div class="c-guitar-col-description">
+                <h3>Adirondack Red</h3>
+                <p>$500</p>
+              </div>
+              <div class="c-guitar-col">
+                <a>View</a>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
     </main>
-    <footer>Copyright &copy;</footer>
+
+    <footer class="l-footer">
+      <small>Copyright &copy;</small>
+    </footer>
   </body>
 </html>
